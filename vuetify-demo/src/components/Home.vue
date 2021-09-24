@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <h1>Home</h1>
+     <v-subheader class=" grey--text">Home</v-subheader>
     <p class="red white--text">
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores,
       exercitationem suscipit explicabo voluptatem voluptate obcaecati adipisci
