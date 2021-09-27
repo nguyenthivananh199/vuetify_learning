@@ -23,7 +23,9 @@
             <img src="/pic.jpg" />
           </v-avatar>
         </v-col>
+        <popup/>
       </v-row>
+
       <v-list>
         <v-list-item
           v-for="link in links"
@@ -44,14 +46,21 @@
 </template>
 
 <script>
+
+import Popup from './Popup.vue';
 export default {
+  components:{
+    Popup
+  
+  },
   data() {
     return {
       drawer: false,
       links: [
         { icon: "idm-email", text: "Dashboard", route: "/" },
-        { icon: "idm-email", text: "My Projects", route: "/projects" },
+        { icon: "idm-email", text: "Projects", route: "/projects" },
         { icon: "idm-email", text: "Team", route: "/team" },
+         { icon: "idm-email", text: "My project ", route: "/myprojects" },
       ],
     };
   },
